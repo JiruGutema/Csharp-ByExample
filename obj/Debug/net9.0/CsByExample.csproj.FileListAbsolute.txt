@@ -12,3 +12,4 @@
 /home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.pdb
 /home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.genruntimeconfig.cache
 /home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/ref/CsByExample.dll
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.sourcelink.json
