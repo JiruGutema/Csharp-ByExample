@@ -1,0 +1,14 @@
+/home/jiren/dev/C#/CsByExample/bin/Debug/net9.0/CsByExample
+/home/jiren/dev/C#/CsByExample/bin/Debug/net9.0/CsByExample.deps.json
+/home/jiren/dev/C#/CsByExample/bin/Debug/net9.0/CsByExample.runtimeconfig.json
+/home/jiren/dev/C#/CsByExample/bin/Debug/net9.0/CsByExample.dll
+/home/jiren/dev/C#/CsByExample/bin/Debug/net9.0/CsByExample.pdb
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.GeneratedMSBuildEditorConfig.editorconfig
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.AssemblyInfoInputs.cache
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.AssemblyInfo.cs
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.csproj.CoreCompileInputs.cache
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.dll
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/refint/CsByExample.dll
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.pdb
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/CsByExample.genruntimeconfig.cache
+/home/jiren/dev/C#/CsByExample/obj/Debug/net9.0/ref/CsByExample.dll
