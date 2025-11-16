@@ -52,3 +52,43 @@ class Abstraction
         human.Sleep();     // Output: Human is sleeping for 8 hours.
     }
 }
+
+
+// Using Interfaces
+// An interface is a contract that defines a set of methods and properties that a class must implement. It provides a way to achieve abstraction by specifying what a class should do without dictating how it should do it. A class can implement multiple interfaces, allowing for more flexible and modular designs.
+
+
+//! The real difference between Abstract class and Interface is that an abstract class can have both abstract and non-abstract methods, while an interface can only have abstract methods (until C# 8.0, which introduced default implementations in interfaces). Additionally, a class can inherit from only one abstract class but can implement multiple interfaces.
+interface IVehicle
+{
+    void Start();
+    void Stop();
+    int Speed { get; set; }
+}
+
+class Car : IVehicle
+{
+    public int Speed { get; set; }
+
+    public void Start()
+    {
+        Console.WriteLine("Car is starting.");
+    }
+
+    public void Stop()
+    {
+        Console.WriteLine("Car is stopping.");
+    }
+}
+
+class InterfaceExample
+{
+    public void RunInterfaceExample()
+    {
+        IVehicle myCar = new Car();
+        myCar.Start(); // Output: Car is starting.
+        myCar.Speed = 60;
+        Console.WriteLine("Car speed: " + myCar.Speed + " km/h"); // Output: Car speed: 60 km/h
+        myCar.Stop(); // Output: Car is stopping.
+    }
+}
