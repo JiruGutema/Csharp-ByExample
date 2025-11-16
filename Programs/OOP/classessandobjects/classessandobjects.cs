@@ -114,11 +114,5 @@ public class Dog{
 			   "\nmy age is: " + age;
 	}
 
-	public static void Main(String[] args)
-	{
-		// Creating object
-		Dog tuffy = new Dog("tuffy", "papillon", 5, "white");
-		Console.WriteLine(tuffy.ToString());
-	}
 }
 }
