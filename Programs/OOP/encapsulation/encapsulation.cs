@@ -49,4 +49,22 @@ class BankAccount
         get { return accountNumber; }
         set { accountNumber = value; }
     }
+    // getter and setter methods are used to access the private field accountNumber. 
+    // This is another example of encapsulation.
+
+    private string? accountHolderName; // private field
+
+    public string? getAccountHolderName() // getter method
+    {
+        return accountHolderName;
+    }
+
+    public void setAccountHolderName(string? name) // setter method
+    {
+        accountHolderName = name;
+    }
+
+// in C#, we can use properties to encapsulate the fields of a class. properties provide a way to read, write, or compute the values of private fields in a controlled manner.
+    
+
 }
