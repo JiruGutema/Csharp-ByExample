@@ -27,6 +27,7 @@ class Methods
     public void DisplayMessage(string message = "Default Message")
     {
         Console.WriteLine(message);
+	Console.WriteLine(Message);
     }
 
     public void MethodsExample()

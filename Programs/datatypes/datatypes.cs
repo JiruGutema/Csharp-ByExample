@@ -95,21 +95,21 @@ class DataTypes
         var inferredInt = 50; // inferred as int
         var inferredString = "Inferred as string"; // inferred as string
         Console.WriteLine("Inferred Integer: " + inferredInt);
-        Console.WriteLine("Inferred String: " + inferredString);    
+        Console.WriteLine("Inferred String: " + inferredString);
 
         //! Pointer data types
         // Pointers are used in unsafe code to store the memory address of a variable. they are primarily used for low-level programming and interop scenarios.
         // the syntax for declaring  a pointer is the data type followed by an asterisk (*)
         // Note: To use pointers, you need to enable unsafe code in your project settings.
         // you can also access the value at the memory address using the dereference operator (*)
-        unsafe 
-        { 
+        unsafe
+        {
             int number = 42;
             int* pointer = &number; // pointer to the memory address of number
-            
+
             Console.WriteLine("Value of number: " + number);
             Console.WriteLine("Address of number: " + (int)pointer);
-            Console.WriteLine("Value at pointer address: " + *pointer); 
+            Console.WriteLine("Value at pointer address: " + *pointer);
         }
     }
 }

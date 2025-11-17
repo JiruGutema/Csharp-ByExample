@@ -21,27 +21,29 @@ abstract class Animal
     {
         Console.WriteLine("All animals are eating.");
     }
-    public abstract void Sleep(); // another abstract method
-    public abstract int Age { get; set; } // abstract property
+    public abstract void Sl
+    {
+        get // another abstract methodty
 }
 
 
-class Human: Animal
+
+    class Human : Animal
+    {
+        public override void MakeSound()
+        {
+            Console.WriteLine("Human says: Hello!");
+        }
 {
-    public override void MakeSound()
-    {
-        Console.WriteLine("Human says: Hello!");
-    }
-    
     public override void Sleep()
-    {
-        Console.WriteLine("Human is sleeping for 8 hours.");
-    }
-    public override int Age { get => Age; set => Console.WriteLine("Setting age to: " + value); }
-
 }
+    Console.WriteLine("Human is sleeping for 8 hours.");
+        }
+        public override int Age { get => Age; set => Console.WriteLine("Setting age to: " + value); }
 
-class Abstraction
+    }
+
+    class Abstraction
 {
     public void AbstractionExample()
     {
