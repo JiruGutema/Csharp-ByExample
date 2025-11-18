@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using OOP;
 using StringBuilderExamples;
 
@@ -87,10 +87,35 @@ namespace Program
             // creating the interface class object
             InterfaceExample interfaceExample = new InterfaceExample();
             interfaceExample.RunInterfaceExample();
+
+            // creating the generics class object
+            Generic generic = new Generic();
+            generic.GenericMain();
+
+            // creating the exceptions class object
+            Exceptions.Exceptions exceptions = new Exceptions.Exceptions();
+            exceptions.ExceptionsMethod();
+
+            // creating the threads class Object
+            ThreadsExample.Threads threads = new ThreadsExample.Threads();
+            threads.ThreadsExampleMethod();
+
         }
         static void Main(string[] args)
 
         {
+            if (args.Length > 0)
+            {
+                Console.WriteLine("Aegument is passed");
+                foreach (string arg in args)
+                {
+                    Console.WriteLine("Args", arg);
+                }
+            }
+            else
+            {
+                Console.WriteLine("No Argument is passed");
+            }
             Program program = new Program();
             RunProgram();
         }
