@@ -22,7 +22,7 @@ namespace Program
             identifiers.IdentifiersMethod();
             // creating the object of Variables class
             Variables variables = new Variables();
-            variables.VariablesMethod();
+
 
             // creating the object of DataTypes class
             DataTypes dataTypes = new DataTypes();
@@ -99,6 +99,18 @@ namespace Program
             // creating the threads class Object
             ThreadsExample.Threads threads = new ThreadsExample.Threads();
             threads.ThreadsExampleMethod();
+
+            // collections Example
+            CollectionsFramework.CollectionsExample collectionsExample = new CollectionsFramework.CollectionsExample();
+            collectionsExample.CollectionsExampleMethod();
+            
+
+            // creating Linq class object
+            
+            LinqExample.Linq linq = new LinqExample.Linq();
+            linq.LingMethod();
+            
+
 
         }
         static void Main(string[] args)
