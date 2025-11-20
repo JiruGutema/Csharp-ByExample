@@ -1,7 +1,3 @@
-using System;
-using System.Diagnostics.CodeAnalysis;
-using System.Reflection.Metadata.Ecma335;
-
 // in programming abstraction is the concept of hiding the complex implementation details and showing only the essential features of the object. it helps to reduce complexity and increase efficiency by allowing the programmer to focus on interactions at a higher level rather than dealing with low-level details.
 
 // 1. Using Abstract Classes
@@ -14,19 +10,20 @@ using System.Reflection.Metadata.Ecma335;
 //     We are not allowed to declare an abstract class as a Sealed Class
 //     We can not declare an abstract class as Static Class.
 
-abstract class Animal
+public abstract class Animal
 {
     public abstract void MakeSound(); // abstract method
+
     public void Eat()
     {
         Console.WriteLine("All animals are eating.");
     }
+
     public abstract void Sleep(); // another abstract method
     public abstract int Age { get; set; } // abstract property
 }
 
-
-class Human : Animal
+public class Human : Animal
 {
     public override void MakeSound()
     {
@@ -37,8 +34,12 @@ class Human : Animal
     {
         Console.WriteLine("Human is sleeping for 8 hours.");
     }
-    public override int Age { get => Age; set => Console.WriteLine("Setting age to: " + value); }
 
+    public override int Age
+    {
+        get => Age;
+        set => Console.WriteLine("Setting age to: " + value);
+    }
 }
 
 class Abstraction
@@ -48,15 +49,14 @@ class Abstraction
         // Animal animal = new Animal(); // This will give an error because we cannot instantiate an abstract class
         Human human = new Human();
         human.MakeSound(); // Output: Human says: Hello!
-        human.Eat();       // Output: All animals are eating.
-        human.Sleep();     // Output: Human is sleeping for 8 hours.
+        human.Eat(); // Output: All animals are eating.
+        human.Sleep(); // Output: Human is sleeping for 8 hours.
+        human.Eat();
     }
 }
 
-
 // Using Interfaces
 // An interface is a contract that defines a set of methods and properties that a class must implement. It provides a way to achieve abstraction by specifying what a class should do without dictating how it should do it. A class can implement multiple interfaces, allowing for more flexible and modular designs.
-
 
 //! The real difference between Abstract class and Interface is that an abstract class can have both abstract and non-abstract methods, while an interface can only have abstract methods (until C# 8.0, which introduced default implementations in interfaces). Additionally, a class can inherit from only one abstract class but can implement multiple interfaces.
 interface IVehicle

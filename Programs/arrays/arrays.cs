@@ -1,4 +1,5 @@
 using System;
+
 // Arrays are used to store multiple values of the same type in a single variable. They provide a way to group related data together and access them using an index.
 // in C#, we store arrays in the heap memory, and we access them using a reference variable.
 // Arrays are of fixed size, which means that once an array is created, its size cannot be changed. If you need a dynamic collection, you can use other data structures like List<T>.
@@ -49,6 +50,6 @@ class Arrays
                 Console.Write(jaggedArray[i][j] + " ");
             }
             Console.WriteLine();
-        }}
-
+        }
+    }
 }

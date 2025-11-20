@@ -1,5 +1,3 @@
-using System;
-using System.Numerics;
 // delegate in C# is a type that represents references to methods with a specific parameter list and return type. Delegates are used to pass methods as arguments to other methods. They are similar to function pointers in C and C++, but are type-safe and secure.
 namespace Delegate
 {
@@ -17,7 +15,7 @@ namespace Delegate
             return prod;
         }
 
-        public delegate int MyDelegate(int a, int b); // declaring a delegate   
+        public delegate int MyDelegate(int a, int b); // declaring a delegate
 
         public void DelegateMethod()
         {
@@ -32,23 +30,20 @@ namespace Delegate
 
             Console.WriteLine("The total is: " + result);
 
-
             // here we used two methods two invoke both of them at the same time. the methods are called send email and send sms
-            Notify notify = SendEmail;
+            Notify? notify = SendEmail;
             notify += SendSms;
             notify("Hello this is the message from the future");
-            // the methods are called in the fifo order. first send email and then send sms. 
+            // the methods are called in the fifo order. first send email and then send sms.
 
             Console.WriteLine("After removing the send sms notification");
             notify -= SendSms;
-
-
-
         }
 
         // we can also multicast the delegate letting us to call the multiple arguments
 
         public delegate void Notify(string message);
+
         public static void SendEmail(string message)
         {
             Console.WriteLine($"Hello This is email notification from the notify class: {message}");
@@ -65,15 +60,14 @@ namespace Delegate
         {
             return number % 2 == 0;
         }
+
         // this is the example of predicate delegate. it takes an integer as input and returns true if the number is even, otherwise false.
         public void PredicateDelegateExample()
-
         {
             //! for predicate delegate, we use Predicate<T> where T is the type of input parameter. the return type is always bool.
             Predicate<int> isEven = IsEvenNumber;
             bool result = isEven(4);
             Console.WriteLine("Is 4 even? " + result);
-
         }
 
         //! action delegate - we use action delegate when we want to pass a method that does not return any value. it can take multiple input parameters but does not return anything.
@@ -102,8 +96,5 @@ namespace Delegate
             int result = squareFunc(5);
             Console.WriteLine("Square of 5 is: " + result);
         }
-
-
-
     }
 }
